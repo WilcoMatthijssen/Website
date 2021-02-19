@@ -1,0 +1,25 @@
+h1, h2, h3, p, a
+{
+   color: #000 !important;
+   font-family: "Courier New" !important;
+}
+
+.fa-linkedin        { color: #007bb6  }
+
+h1 { display:inline; } 
+.global { margin: 0 auto; width: 50%; }
+
+
+.header { 
+    width: 100%;
+    padding: 0px 20px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 0px;
+}
+
+.description {
+    border-radius: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    width: 100%;
+}
