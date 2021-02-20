@@ -3,11 +3,23 @@
 <head>
     <title>Wilco Matthijssen</title>
     <link rel="stylesheet" href="style.css".css">
-    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <script src="https://kit.fontawesome.com/be48020426.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+
+
     <!-- title -->
     <h1>👨‍💻 Wilco Matthijssen</h1>
     <p> Beep boop beep</p>
@@ -45,4 +57,6 @@
 
 
 </body>
+
+
 </html>
