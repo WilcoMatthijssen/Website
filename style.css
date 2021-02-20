@@ -1,18 +1,49 @@
-h1, h2, h3, h4, p, a
-{
-   color: #000 !important;
-   font-family: "Courier New" !important;
-   margin: 10px !important;
-}
-.fa-linkedin        { color: #007bb6  }
-
 body { 
-    margin-left: 5%;
-    margin-right: 5%;
+    --background-color: #FFF;
+    --text-color: #000;
+    --border-color: #000;
+
+
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "Courier New";
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+
 } 
 
+.dark-mode {
+    --background-color: #121212;
+    --text-color: #FFF;
+    --border-color: #FFF;
+}
+
+  
+
+@media screen and (max-width: 900px) {
+body {
+    margin: 2%;
+    width: 96%
+}
+}
+
+ 
+
+h1, h2, h3, h4, p, a
+{
+    color: var(--text-color);
+    margin: 10px !important;
+ 
+}
+/* .fa-linkedin { 
+    color: #007bb6;  
+} */
+
+
 h1 { 
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid;
 }
 
 h2 { 
@@ -22,5 +53,9 @@ h2 {
 
 .description {
     border-radius: 10px;
-    border: 1px solid #000;
+    border: 1px solid;
+    
 }
+
+
+/* 🌑💡 */
