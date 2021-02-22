@@ -11,7 +11,7 @@ body {
     border-color: var(--border-color);
 }
 
-.dark-mode {
+.darkmode {
     --background-color: #121212;
     --text-color: #FFF;
     --border-color: #FFF;
@@ -23,10 +23,40 @@ body {
     }
 }
 
+
+
+.linkedin-hide{
+    display: none;
+    
+}
+
+.fa-linkedin:hover + .linkedin-hide{
+    display: inline-block;
+}
+
+.github-hide{
+    display: none;
+    
+}
+.fa-github-square:hover + .github-hide{
+    display: inline-block;
+}
+
+.inlin{
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 0%;
+}
+
+
 a, p, h2{
     color: var(--text-color);
     margin: 10px;
 }
+button{
+    font-size: 1.5em;
+}
+
 /* .fa-linkedin { 
     color: #007bb6;  
 } */
@@ -39,8 +69,7 @@ h1 {
 }
 
 h2 { 
-    padding-top: 1em; 
-    padding-bottom: 0em; 
+    padding: 0em; 
     font-size: 2em;
     margin:0%;
     color: var(--text-color);
@@ -49,7 +78,17 @@ h2 {
 .description {
     border-radius: 10px;
     border: 1px solid;
+    margin-bottom: 1em; 
+    padding: 1em;
 }
 
 
-/* 🌑💡 */
+.dark-mode-toggle:focus {outline:0;}
+.language-mode-toggle, .dark-mode-toggle, .subtitletext{
+    display:inline;
+    border: none;
+    background: none;
+    padding:1em;
+
+}
+
