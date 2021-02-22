@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <title>Wilco Matthijssen</title>
     <link rel="stylesheet" href="style.css".css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="Description" content="Written by Wilco Matthijssen">
     <script src="https://kit.fontawesome.com/be48020426.js" crossorigin="anonymous"></script>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
 </head>
-
 <body>
-
-    <button onclick="myFunction()">Toggle dark mode</button>
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
-
 
     <!-- title -->
     <h1>👨‍💻 Wilco Matthijssen</h1>
-    <p> Beep boop beep</p>
-
+    <div class="subtitle"> 
+        <p class="subtitletext"> Beep boop beep</p>   
+        
+        <button id="dark-mode-toggle" class="dark-mode-toggle">💡</button>
+        <script type="text/javascript" src="darkmode.js"></script>
+        <button id="language-mode-toggle" class="language-mode-toggle"><i class="em em-gb" aria-role="presentation" aria-label="United Kingdom Flag"></i></button>
+        <!-- <script type="text/javascript" src="languagemode.js"></script> -->
+    </div>
+    
 
     <!-- projectdemo -->
     <h2>Recent</h2>
@@ -38,8 +38,10 @@
         <p>  My name is Wilco Matthijssen and I am a 21 year old computer science student at the Hogeschool Utrecht. 
                 I enjoy developing backend solutions and prefer working with Python and C++. 
                 To get a glimpse of what I'm capable of please look at my projects on Github.</p>
-        <p> <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/wilco-matthijssen-731424157/">Linkedin</a></p>
-        <p> <i class="fab fa-github-square"> </i> <a href="https://github.com/WilcoMatthijssen">Github</a></p>
+        
+        <p class="inlin">&lt;</p><a href="https://www.linkedin.com/in/wilco-matthijssen-731424157/"><i class="fab fa-linkedin"></i><p class="linkedin-hide">Linkedin</p></a><p class="inlin">&gt;</p>
+
+        <p class="inlin">&lt;</p><a href="https://github.com/WilcoMatthijssen"><i class="fab fa-github-square"></i><p class="github-hide">Github</p></a><p class="inlin">&gt;</p>
     </div>
 
 
