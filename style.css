@@ -11,7 +11,7 @@ body {
     border-color: var(--border-color);
 }
 
-.darkmode {
+.darkmodeSetting {
     --background-color: #121212;
     --text-color: #FFF;
     --border-color: #FFF;
