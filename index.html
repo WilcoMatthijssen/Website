@@ -15,46 +15,39 @@
     <!-- title -->
     <h1>👨‍💻 Wilco Matthijssen</h1>
     <div class="subtitle"> 
-        <p class="subtitletext"> Beep boop beep</p>   
-        
-        <button id="dark-mode-toggle" class="dark-mode-toggle">💡</button>
-        <script type="text/javascript" src="darkmode.js"></script>
-        <button id="language-mode-toggle" class="language-mode-toggle"><i class="em em-gb" aria-role="presentation" aria-label="United Kingdom Flag"></i></button>
-        <!-- <script type="text/javascript" src="languagemode.js"></script> -->
+        <p id="subtitleText" class="subtitletext"> Beep boop beep</p>   
+        <i class="em em-bulb" id="darkmode-toggle" onclick="toggleDarkmode()"></i>
+        <i class="em em-gb" id="language-toggle" onclick="toggleLanguage()"></i>
     </div>
-    
+  
 
     <!-- projectdemo -->
-    <h2>Recent</h2>
-    <div class="description">
-        <p>Recently I started an Intership at Onyx Cybersecurity.</p>
-        <p>Currently Im working on expanding and developing this website. Im somewhat new to webdevelopment and exploring the possibilities.</p>
-    </div>
+    <h2 id="recentTitleText"></h2>
+    <div class="description" id="recentDescriptionText"></div>
 
 
     <!-- aboutme -->
-    <h2>About me</h2>
+    <h2 id="aboutmeTitleText"></h2>
     <div class="description">
-        <p>  My name is Wilco Matthijssen and I am a 21 year old computer science student at the Hogeschool Utrecht. 
-                I enjoy developing backend solutions and prefer working with Python and C++. 
-                To get a glimpse of what I'm capable of please look at my projects on Github.</p>
-        
+        <p id="aboutmeText"></p>
         <p class="inlin">&lt;</p><a href="https://www.linkedin.com/in/wilco-matthijssen-731424157/"><i class="fab fa-linkedin"></i><p class="linkedin-hide">Linkedin</p></a><p class="inlin">&gt;</p>
-
         <p class="inlin">&lt;</p><a href="https://github.com/WilcoMatthijssen"><i class="fab fa-github-square"></i><p class="github-hide">Github</p></a><p class="inlin">&gt;</p>
     </div>
 
 
     <!-- projects -->
-    <h2>My projects</h2>
+    <h2 id="projectsTitleText"></h2>
     <div class="description">
-        <p><b>🌡️</i> <a href="https://github.com/WilcoMatthijssen/Si702X">Temperature sensor</a></b></p>
-        <p> An Arduino library made for the Si702X sensors. With this library it's possible to read the temperature in more formats you knew existed. </p>
-        <p><b>🤖<a href="https://github.com/WilcoMatthijssen/RiotBot">RiotBot</a></b></p>
-        <p> A Discord bot made with Riots League of Legends API. This Discord bot allows you to get information directly from the League of Legends API. </p>
-        <p><b>📏<a href="https://github.com/WilcoMatthijssen/SubnetCalculator">Subnet calculator</a></b></p>
-        <p> A windows application to calculate your subnets. Calculate how big your subnet needs to be for the given amount of users and more! </p>
+        <p><b>🌡️</i> <a id="tempsensorLinkText" href="https://github.com/WilcoMatthijssen/Si702X"></a></b></p>
+        <p id="tempsensorDescriptionText"></p>
+        <p><b>🤖<a id="riotbotLinkText" href="https://github.com/WilcoMatthijssen/RiotBot"></a></b></p>
+        <p id="riotbotDescriptionText"></p>
+        <p><b>📏<a id="subnetcalcLinkText" href="https://github.com/WilcoMatthijssen/SubnetCalculator"></a></b></p>
+        <p id="subnetcalcDescriptionText"></p>
     </div>
 
+
+    <script type="text/javascript" src="darkmode.js"></script>
+    <script type="text/javascript" src="languagemode.js"></script>
 </body>
 </html>
