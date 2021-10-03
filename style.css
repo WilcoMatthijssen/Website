@@ -1,94 +1,219 @@
-body { 
-    --background-color: #FFF;
-    --text-color: #000;
-    --border-color: #000;
-
-    margin: 0% 25%;
-    font-family: "Courier New";
-    font-size: 1.2em;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    border-color: var(--border-color);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.darkmodeSetting {
-    --background-color: #121212;
-    --text-color: #FFF;
-    --border-color: #FFF;
+body{
+    background-color: #121212;
+    font-family: 'Khula', sans-serif;
+    color: white;
 }
 
-@media screen and (max-width: 900px) {
-    body {
-        margin: 0% 2%;
+header{
+    display: flex;
+    
+    align-items: center;
+    gap: 5%;
+    padding-top: 5%;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+header img{
+    
+    height: 40rem;
+    
+    /* max-width:60%;
+    max-height:60%; */
+    filter: drop-shadow(5px 5px 5px #222);
+    object-fit: contain;
+    
+}
+
+.header_txt{
+   
+    width: 45rem;
+    padding-top: 2rem;
+    /* https://stackoverflow.com/questions/33887051/prevent-flex-items-from-stretching
+    align-items: flex-start; */
+    
+}
+
+
+.header_txt h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 100%;
+
+    text-shadow: 5px 5px 10px #222;
+}
+
+.header_txt p{
+    font-size: 2rem;
+    color: #BBB;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+
+.header_txt a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color:#FFF;
+    font-weight: bold;
+    background-color: #0e76a8;
+
+    border-radius: 3rem;
+    padding: 0.5rem 2rem;
+    box-shadow: 5px 5px 10px #222;
+}
+
+.header_txt a svg{
+    fill: #FFF;
+    height: 1em;
+    
+    /* https://stackoverflow.com/questions/46503436/svg-inside-span-isnt-on-the-same-line-as-the-text */
+    vertical-align:-0.1875em;
+    
+
+}
+.header_txt span{
+    color: #0e76a8;
+}
+/* ================================================================================== */
+
+.showcase{
+    font-size: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 4px solid #fff;
+
+
+
+}
+
+.showcase svg{
+    height: 7rem;
+    fill: white;
+}
+
+
+
+
+
+/* ================================================================================== */
+
+section{
+    display: flex;
+    height: 40vh;
+    /* align-items: center; */
+    gap: 3rem;
+
+    margin: 10vh;
+
+    margin: 0 auto;
+    width: clamp(1500px, 60%, 99%); 
+}
+
+
+section img{
+    flex: 50%;
+    height: 80%;
+
+
+    filter: drop-shadow(5px 5px 5px #222);
+    object-fit: contain;
+}
+
+.section_txt{
+    flex: 50%;
+    width: 50%;
+
+
+}
+
+
+.section_txt h2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 100%;
+    text-shadow: 5px 5px 10px #222;
+    
+}
+
+.section_txt p{
+    font-size: 1.5rem;
+    color: #BBB;
+    font-weight: lighter;
+
+    margin-bottom: 1.5rem;
+}
+
+.section_txt a{
+    text-decoration: none;
+    font-size: 1.75rem;
+    color:#FFF;
+    font-weight: bold;
+
+    border-radius: 3rem;
+    padding: 0.5rem 2rem;
+
+    box-shadow: 5px 5px 10px #222;
+
+
+}
+
+.section_txt a svg{
+    fill: #FFF;
+    height: 1em;
+    
+    /* https://stackoverflow.com/questions/46503436/svg-inside-span-isnt-on-the-same-line-as-the-text */
+    vertical-align:-0.1875em;
+}
+
+
+.red_background{
+    background-color: 	#C70039;
+}
+.red_color{
+    color: 	#C70039;
+}
+
+.yellow_background{
+    background-color: 	#FF5733;
+}
+.yellow_color{
+    color: 	#FF5733;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    section,
+    header{
+         flex-direction: column;
     }
+
+
+
 }
 
 
 
-.linkedin-hide{
-    display: none;
-    
-}
-
-.fa-linkedin:hover + .linkedin-hide{
-    display: inline-block;
-}
-
-.github-hide{
-    display: none;
-    
-}
-.fa-github-square:hover + .github-hide{
-    display: inline-block;
-}
-
-.inlin{
-    display: inline-block;
-    font-size: 2em;
-    margin-right: 0%;
-}
 
 
-a, p, h2{
-    color: var(--text-color);
-    margin: 10px;
-}
-button{
-    font-size: 1.5em;
-}
-
-/* .fa-linkedin { 
-    color: #007bb6;  
-} */
 
 
-h1 { 
-    border-bottom: 1px solid;
-    font-size: 3em;
-    color: var(--text-color);
-}
-
-h2 { 
-    padding: 0em; 
-    font-size: 2em;
-    margin:0%;
-    color: var(--text-color);
-}
-
-.description {
-    border-radius: 10px;
-    border: 1px solid;
-    margin-bottom: 1em; 
-    padding: 1em;
-}
 
 
-.dark-mode-toggle:focus {outline:0;}
-.language-mode-toggle, .dark-mode-toggle, .subtitletext{
-    display:inline;
-    border: none;
-    background: none;
-    padding:1em;
 
-}
+
+
+
+
 
