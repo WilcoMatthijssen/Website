@@ -118,12 +118,12 @@ header span{
 
 section{
     /* display: flex; */
-    height: 40vh;
+    /* height: 40vh; */
     /* align-items: center; */
-    gap: 3rem;
+    /* gap: 3rem; */
 
     
-    margin: 3vh;
+    margin: 3rem;
 
     /* margin: 0 auto;
     width: clamp(1500px, 60%, 99%);  */
@@ -140,22 +140,27 @@ section{
 
 
 section img{
-    flex: 50%;
-    height: 80%;
+    /* flex: 50%;
+    height: 80%; */
+    height: 50vh;
+    margin: 3rem;
 
 
-    filter: drop-shadow(5px 5px 5px #222);
+
+
+    /* border-radius: 1rem; */
+    filter: drop-shadow(2rem 2rem rgba(0, 0, 150, 12%));
+   
     object-fit: contain;
 }
 
-/* .section_txt{
-    flex: 50%;
-    width: 50%;
 
 
-} */
+.section_txt{
 
+    margin: 3rem;
 
+}
 .section_txt h2{
     font-size: 3rem;
     font-weight: bold;
@@ -178,13 +183,19 @@ section img{
     color:#FFF;
     font-weight: bold;
 
-    border-radius: 3rem;
+    border-radius: 1rem;
     padding: 0.5rem 2rem;
 
-
+    text-decoration: none;
+    background-color: rgba(0, 0, 150, 12%);
     /* box-shadow: 5px 5px 10px #222; */
 
 
+}
+
+
+.section_txt a:hover{
+    background-color: rgba(0, 0, 50, 20%);
 }
 
 .section_txt a svg{
@@ -196,34 +207,19 @@ section img{
 }
 
 
-.red_background{
-    background-color: 	#C70039;
-}
-.red_color{
-    color: 	#C70039;
-}
 
-.yellow_background{
-    background-color: 	#FF5733;
-}
-.yellow_color{
-    color: 	#FF5733;
+
+
+#tetris{
+    background: 	#3cba54;
+} 
+
+#temperatuur{
+    background: 	#C70039;
 }
 
+#subnet{
+    background: rgb(40, 40, 90);
+}
 
 
-
-
-
-
-/* 
-@media only screen and (max-width: 1200px) {
-    section,
-    header{
-         flex-direction: column;
-         width: 100%;
-    }
-
-
-
-} */
