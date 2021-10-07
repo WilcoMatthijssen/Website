@@ -1,118 +1,141 @@
 * {
     margin: 0;
     padding: 0;
+
+    --title_color: rgb(0, 0, 100);
+
+    --subtitle_color: rgb(0, 0, 128);
+    --text_color: #333;
+
+
+    --background_color: #FBFAF5;
+  
+    /* #dee8f3; */
+
+
+
+    --linkedin_background: #0e76a8;
 }
+
+
+ /* *{ 
+    --title_color: #FFF;
+    --subtitle_color: #BBB;
+    --text_color: #FFF;
+
+
+    --background_color: #121212;
+} */
+
+
 
 body{
-    background-color: #121212;
-    font-family: 'Khula', sans-serif;
-    color: white;
+    background-color: #FFF;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #FFF;
 }
+
+
+/* ================================================================================== */
 
 header{
-    display: flex;
+    gap: 70px;
+    margin: 15vh 10vh 15vh 5vh;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     
     align-items: center;
-    gap: 5%;
-    padding-top: 5%;
-    /* justify-content: space-around; */
-    justify-content: space-evenly;
-}
-header img{
-    
-    height: 40rem;
-    
-    /* max-width:60%;
-    max-height:60%; */
-    filter: drop-shadow(5px 5px 5px #222);
-    object-fit: contain;
-    
-}
+    justify-content: center;
+    justify-items: center;
 
-.header_txt{
    
-    width: 45rem;
-    padding-top: 2rem;
-    /* https://stackoverflow.com/questions/33887051/prevent-flex-items-from-stretching
-    align-items: flex-start; */
+}
+
+
+
+header img{
+    height: 50vh;
     
+    border-radius: 1rem;
+    filter: drop-shadow(50px 50px rgba(0, 0, 150, 12%));
+   
+    object-fit: contain;
+
 }
 
 
-.header_txt h1{
-    font-size: 4rem;
-    font-weight: bold;
-    line-height: 100%;
+header h1{
+    font-size:      4rem;
+    font-weight:    400;
+    color:          var(--title_color);
 
-    text-shadow: 5px 5px 10px #222;
+    line-height:    100%;
 }
 
-.header_txt p{
-    font-size: 2rem;
-    color: #BBB;
-    font-weight: lighter;
+
+header p{
+    font-size:    2rem;
+    font-weight:  300;
+    color:        var(--subtitle_color);
+    
     margin-bottom: 2rem;
 }
 
-.header_txt a{
-    text-decoration: none;
-    font-size: 2.5rem;
-    color:#FFF;
-    font-weight: bold;
-    background-color: #0e76a8;
 
-    border-radius: 3rem;
+header a{
+    font-size:    2rem;
+    font-weight:  600;
+    color:        var(--linkedin_background);
+   
+    text-decoration: none;
+    background-color: rgba(0, 0, 150, 12%);
+
+    border-radius: 1rem;
     padding: 0.5rem 2rem;
-    box-shadow: 5px 5px 10px #222;
 }
 
-.header_txt a svg{
-    fill: #FFF;
+header a:hover{
+    background-color: rgba(0, 0, 50, 20%);
+}
+
+
+header a svg{
+    fill: var(--linkedin_background);
     height: 1em;
-    
+
     /* https://stackoverflow.com/questions/46503436/svg-inside-span-isnt-on-the-same-line-as-the-text */
     vertical-align:-0.1875em;
-    
-
-}
-.header_txt span{
-    color: #0e76a8;
-}
-/* ================================================================================== */
-
-.showcase{
-    font-size: 7rem;
-    margin-top: 7rem;
-    margin-bottom: 3rem;
-    font-weight: normal;
-    text-align: center;
-    border-bottom: 4px solid #fff;
-
-
-
-}
-
-.showcase svg{
-    height: 7rem;
-    fill: white;
 }
 
 
-
+header span{
+    font-weight: 600;
+}
 
 
 /* ================================================================================== */
 
 section{
-    display: flex;
+    /* display: flex; */
     height: 40vh;
     /* align-items: center; */
     gap: 3rem;
 
-    margin: 10vh;
+    
+    margin: 3vh;
 
-    margin: 0 auto;
-    width: clamp(1500px, 60%, 99%); 
+    /* margin: 0 auto;
+    width: clamp(1500px, 60%, 99%);  */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+    background: #C70039;
+    border-radius: 15px;
 }
 
 
@@ -125,25 +148,25 @@ section img{
     object-fit: contain;
 }
 
-.section_txt{
+/* .section_txt{
     flex: 50%;
     width: 50%;
 
 
-}
+} */
 
 
 .section_txt h2{
     font-size: 3rem;
     font-weight: bold;
     line-height: 100%;
-    text-shadow: 5px 5px 10px #222;
+    /* text-shadow: 5px 5px 10px #222; */
     
 }
 
 .section_txt p{
     font-size: 1.5rem;
-    color: #BBB;
+    color: #fff;
     font-weight: lighter;
 
     margin-bottom: 1.5rem;
@@ -158,7 +181,8 @@ section img{
     border-radius: 3rem;
     padding: 0.5rem 2rem;
 
-    box-shadow: 5px 5px 10px #222;
+
+    /* box-shadow: 5px 5px 10px #222; */
 
 
 }
@@ -192,28 +216,14 @@ section img{
 
 
 
-
-@media only screen and (max-width: 1000px) {
+/* 
+@media only screen and (max-width: 1200px) {
     section,
     header{
          flex-direction: column;
+         width: 100%;
     }
 
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
