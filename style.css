@@ -1,35 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-
     --title_color: rgb(0, 0, 100);
-
     --subtitle_color: rgb(0, 0, 128);
     --text_color: #333;
-
-
     --background_color: #FBFAF5;
-  
     /* #dee8f3; */
-
-
-
     --linkedin_background: #0e76a8;
 }
 
 
- /* *{ 
+/* *{ 
     --title_color: #FFF;
     --subtitle_color: #BBB;
     --text_color: #FFF;
-
-
     --background_color: #121212;
 } */
 
-
-
-body{
+body {
     background-color: #FFF;
     font-family: 'Roboto Mono', sans-serif;
     color: #FFF;
@@ -38,189 +26,142 @@ body{
 
 /* ================================================================================== */
 
-header{
+header {
     gap: 70px;
     margin: 15vh 10vh 15vh 5vh;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-    
     align-items: center;
     justify-content: center;
     justify-items: center;
-
-   
 }
 
-
-
-header img{
+header img {
     height: 50vh;
-    
     border-radius: 1rem;
     filter: drop-shadow(50px 50px rgba(0, 0, 150, 12%));
-   
     object-fit: contain;
-
 }
 
-
-header h1{
-    font-size:      4rem;
-    font-weight:    400;
-    color:          var(--title_color);
-
-    line-height:    100%;
+header h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--title_color);
+    line-height: 100%;
 }
 
-
-header p{
-    font-size:    2rem;
-    font-weight:  300;
-    color:        var(--subtitle_color);
-    
+header p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--subtitle_color);
     margin-bottom: 2rem;
 }
 
-
-header a{
-    font-size:    2rem;
-    font-weight:  600;
-    color:        var(--linkedin_background);
-   
+header a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--linkedin_background);
     text-decoration: none;
     background-color: rgba(0, 0, 150, 12%);
-
     border-radius: 1rem;
     padding: 0.5rem 2rem;
 }
 
-header a:hover{
+header a:hover {
     background-color: rgba(0, 0, 50, 20%);
 }
 
-
-header a svg{
+header a svg {
     fill: var(--linkedin_background);
     height: 1em;
-
     /* https://stackoverflow.com/questions/46503436/svg-inside-span-isnt-on-the-same-line-as-the-text */
-    vertical-align:-0.1875em;
+    vertical-align: -0.1875em;
 }
 
-
-header span{
+header span {
     font-weight: 600;
 }
 
 
 /* ================================================================================== */
 
-section{
+section {
     /* display: flex; */
     /* height: 40vh; */
     /* align-items: center; */
     /* gap: 3rem; */
-
-    
     margin: 3rem;
-
     /* margin: 0 auto;
     width: clamp(1500px, 60%, 99%);  */
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     align-items: center;
     justify-content: center;
     justify-items: center;
-
     background: #C70039;
     border-radius: 15px;
 }
 
-
-section img{
+section img {
     /* flex: 50%;
     height: 80%; */
     height: 50vh;
     max-width: 100%;
     margin: 3rem;
-
-
-
-
     /* border-radius: 1rem; */
     filter: drop-shadow(2rem 2rem rgba(0, 0, 150, 12%));
-   
     object-fit: contain;
 }
 
-
-
-.section_txt{
-
+.section_txt {
     margin: 3rem;
-
 }
-.section_txt h2{
+
+.section_txt h2 {
     font-size: 3rem;
     font-weight: bold;
     line-height: 100%;
     /* text-shadow: 5px 5px 10px #222; */
-    
 }
 
-.section_txt p{
+.section_txt p {
     font-size: 1.5rem;
     color: #fff;
     font-weight: lighter;
-
     margin-bottom: 1.5rem;
 }
 
-.section_txt a{
+.section_txt a {
     text-decoration: none;
     font-size: 1.75rem;
-    color:#FFF;
+    color: #FFF;
     font-weight: bold;
-
     border-radius: 1rem;
     padding: 0.5rem 2rem;
-
     text-decoration: none;
     background-color: rgba(0, 0, 150, 12%);
     /* box-shadow: 5px 5px 10px #222; */
-
-
 }
 
-
-.section_txt a:hover{
+.section_txt a:hover {
     background-color: rgba(0, 0, 50, 20%);
 }
 
-.section_txt a svg{
+.section_txt a svg {
     fill: #FFF;
     height: 1em;
-    
     /* https://stackoverflow.com/questions/46503436/svg-inside-span-isnt-on-the-same-line-as-the-text */
-    vertical-align:-0.1875em;
+    vertical-align: -0.1875em;
 }
 
-
-
-
-
-#tetris{
-    background: 	#3cba54;
-} 
-
-#temperatuur{
-    background: 	#C70039;
+#tetris {
+    background: #3cba54;
 }
 
-#subnet{
+#temperatuur {
+    background: #C70039;
+}
+
+#subnet {
     background: rgb(40, 40, 90);
 }
-
-
